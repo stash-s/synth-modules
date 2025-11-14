@@ -41,3 +41,6 @@ fp-info-cache
 
 # Gerber output directories
 *.gbr
+*.gbrjob
+*.drl
+**/gerber.zip

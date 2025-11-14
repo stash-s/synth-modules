@@ -52,7 +52,20 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_mismatch|81387500|74290000|4346b0b7-97f7-463a-b7c0-d8726945398f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|65289982|122536224|83d74cb8-f6c3-4dab-a11e-1c857ca7d93b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_over_copper|67033351|117840010|2643074b-c84c-4d28-8c4b-50c0aee7fab4|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -577,7 +590,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
