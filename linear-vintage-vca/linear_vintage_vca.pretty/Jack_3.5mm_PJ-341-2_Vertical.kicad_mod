@@ -1,0 +1,258 @@
+(footprint "Jack_3.5mm_PJ-341-2_Vertical"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TRS 3.5mm, horizontal, through-hole, https://www.cuidevices.com/product/resource/pdf/sj1-352xn.pdf")
+	(tags "TRS audio jack stereo horizontal")
+	(property "Reference" "REF**"
+		(at 0 0.5 0)
+		(layer "F.SilkS")
+		(uuid "b3ba1f9a-4ae1-4177-8c5e-208be3338de7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Jack_3.5mm_PJ-341-2_Vertical"
+		(at 0 -6 0)
+		(layer "F.Fab")
+		(uuid "6a85269f-f391-48dd-b8cb-cf0f2c2ac0ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d411d7f1-7b3d-4685-8218-3a53c68f363c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fa2a3c80-9526-49ff-848f-cbdca05c0bfe")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -4.7 5.8)
+		(end -4.7 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bdaf2cfa-2ef5-4021-8633-0e8d2b2bde53")
+	)
+	(fp_line
+		(start -4.7 5.8)
+		(end 4.7 5.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5846f14c-246e-4908-98ce-b69c3874c497")
+	)
+	(fp_line
+		(start -4 -5.2)
+		(end -4.7 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6ef7b908-7a14-4030-be3f-3dbee287abd7")
+	)
+	(fp_line
+		(start -4 -5.2)
+		(end 4 -5.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d38ab482-bc1c-45a1-8287-b9946d613ef5")
+	)
+	(fp_line
+		(start 4 -5.2)
+		(end 4.7 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "636aabb0-89b0-4c26-b84b-62b618184364")
+	)
+	(fp_line
+		(start 4.7 5.8)
+		(end 4.7 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7095bf20-45f8-42a1-9bc7-777a8482e1a0")
+	)
+	(fp_rect
+		(start -4.9 -5.4)
+		(end 4.9 6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "71378879-3eb5-4894-acc8-3c9150b0d251")
+	)
+	(fp_line
+		(start -4.5 5.6)
+		(end -4.5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "82f6d25d-5d07-4dba-8768-4b60528c62cc")
+	)
+	(fp_line
+		(start -4.5 5.6)
+		(end 4.5 5.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e511b6a6-4f4d-48e9-ae80-4cacebaa8549")
+	)
+	(fp_line
+		(start -4 -5)
+		(end -4.5 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "ee3110aa-d878-4d94-8753-6657137fceca")
+	)
+	(fp_line
+		(start -4 -5)
+		(end 4 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5d393ccc-45ed-40f1-a205-da9c00bc9a20")
+	)
+	(fp_line
+		(start 4 -5)
+		(end 4.5 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "c2233c94-4dfa-4f2a-b95a-ee009fcc45f6")
+	)
+	(fp_line
+		(start 4.5 5.6)
+		(end 4.5 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d9f66bfd-1137-4fe9-814e-049dac42d0f9")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 4 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b0efffb6-60ad-41e4-9c41-1e869d38056e")
+	)
+	(fp_text user "PCB edge"
+		(at 0 3.65 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "280aa230-a25f-414c-9d84-47f182621149")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -1.5 0)
+		(layer "F.Fab")
+		(uuid "0444a2b0-ae1d-4429-ade8-3e5f343ce115")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "G" thru_hole oval
+		(at 3.7 0 180)
+		(size 1.8 4)
+		(drill oval 1 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "20c24e77-ad52-48ad-9edd-c49e3d0dd29f")
+	)
+	(pad "S" thru_hole oval
+		(at 0 -3.5 90)
+		(size 1.8 4)
+		(drill oval 1 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4dbaf901-42a5-41cb-b535-46af63c274ef")
+	)
+	(pad "T" thru_hole oval
+		(at 0 4.5)
+		(size 4 1.8)
+		(drill oval 3.2 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "86d30761-eaab-4151-b9e7-bdd2ba8c2201")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/linear_vintage_vca.3dmodels/AudioJack 3-pin.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
