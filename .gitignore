@@ -44,3 +44,6 @@ fp-info-cache
 *.gbrjob
 *.drl
 **/gerber.zip
+
+# MacOS nonsense
+.DS_Store
