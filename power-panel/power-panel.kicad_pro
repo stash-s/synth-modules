@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.56,
-          "width": 1.56
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -448,12 +448,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": [
-      "exp-converter"
-    ]
+    "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "exp-converter.kicad_pro",
+    "filename": "power-panel.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -471,17 +469,10 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
+        "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "name": "Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6
       }
     ],
     "meta": {
@@ -489,20 +480,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power",
-        "pattern": "VCC"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "VEE"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GND"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -512,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "exp-converter.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -633,7 +611,7 @@
   },
   "sheets": [
     [
-      "e04193b9-64b6-43c3-8e95-9a6a215f7105",
+      "7deee0ea-abb2-4bb2-a9ff-ff759b2a5dee",
       "Root"
     ]
   ],

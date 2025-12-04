@@ -17,8 +17,8 @@
 		)
 	)
 	(property "Value" "Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
-		(at 0 9.86 180)
-		(layer "F.Fab")
+		(at 0 0 270)
+		(layer "F.SilkS")
 		(uuid "76eede0a-e6d8-47d6-b23c-43a8c85c8b4a")
 		(effects
 			(font
@@ -236,7 +236,7 @@
 		(uuid "5e449f0b-e4f5-44a1-a59b-b353282a6938")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0.04 -0.12 90)
+		(at 2.75 0.5 90)
 		(layer "F.Fab")
 		(uuid "60cc1576-50ef-4a23-be2e-b127f5f0f480")
 		(effects
@@ -248,16 +248,16 @@
 	)
 	(pad "" thru_hole oval
 		(at -4.8 0 180)
-		(size 2.72 3.24)
-		(drill oval 1.1 1.8)
+		(size 2.2 3.4)
+		(drill oval 1.2 2.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "dfe03e0a-3a48-4b4c-831a-d33acedfab57")
 	)
 	(pad "" thru_hole oval
 		(at 4.8 0 180)
-		(size 2.72 3.24)
-		(drill oval 1.1 1.8)
+		(size 2.2 3.4)
+		(drill oval 1.2 2.4)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "eb8fa706-eb61-4d8f-bd56-c1799dc8e195")
@@ -287,7 +287,7 @@
 		(uuid "927b3020-d809-4bd9-95fd-49dd74c263e6")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/exp-converter.3dmodels/Potentiometer_Single_Vertical.step"
+	(model "${KIPRJMOD}/linear_vintage_vca.3dmodels/Potentiometer_Single_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
