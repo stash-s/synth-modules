@@ -1,0 +1,215 @@
+(footprint "Blade_3866B.68_1"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator")
+	(tags "connector Molex KK-254 side entry")
+	(property "Reference" "J2"
+		(at 2.54 -2.54 0)
+		(layer "F.SilkS")
+		(uuid "2f210ca4-b342-4c1d-830a-018030280a51")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Conn_01x01_Male"
+		(at 2.54 2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "df3f1a5e-6194-4207-bb93-e60b52607d50")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "84ea9120-c28c-4bc3-93e0-511d609e23ab")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a5b6c1e-1aa0-479d-bf27-8e85ffb4a756")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.6 -0.6)
+		(end 6.6 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8a18534a-0702-4277-b25b-a6179216dced")
+	)
+	(fp_line
+		(start -1.6 0.6)
+		(end -1.6 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d54a9e65-80e8-4fee-bdd5-47b3c23da322")
+	)
+	(fp_line
+		(start -1.6 0.6)
+		(end 6.6 0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5c09fd82-b16b-4944-a664-720c8750f435")
+	)
+	(fp_line
+		(start 6.6 -0.6)
+		(end 6.6 0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dd2243df-eb6d-4535-ac3b-4630edbba89d")
+	)
+	(fp_line
+		(start -1.8 -0.8)
+		(end -1.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d6ccb90b-8f26-471d-9055-ed0c08242a26")
+	)
+	(fp_line
+		(start -1.8 -0.8)
+		(end 6.8 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8db4a614-2e5f-469c-a253-10163b65aa4e")
+	)
+	(fp_line
+		(start -1.8 0.8)
+		(end 6.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3128b857-6d3d-490d-bd29-209873cbabde")
+	)
+	(fp_line
+		(start 6.8 -0.8)
+		(end 6.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "531905cc-76d9-4735-91bb-fabb318d01a2")
+	)
+	(fp_line
+		(start -1.5 -0.5)
+		(end -1.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "61c401d2-c4c7-4094-b6a7-0d0ae7e7a073")
+	)
+	(fp_line
+		(start -1.5 -0.5)
+		(end 6.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "84cb04af-bf7d-4f39-85cc-bfd8dda4806d")
+	)
+	(fp_line
+		(start -1.5 0.5)
+		(end 6.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1dc32994-d8b0-4bbf-ae47-c2a344b870f7")
+	)
+	(fp_line
+		(start 6.5 -0.5)
+		(end 6.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8905b948-791a-4235-ad3b-4df29f2c84a2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 -2.54 0)
+		(layer "F.Fab")
+		(uuid "4bc795a2-c53a-422f-bfd7-5d1a050049c4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c8406e83-e894-425e-a12b-83fe2eafec09")
+	)
+	(pad "1" thru_hole circle
+		(at 5 0)
+		(size 2.54 2.54)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4839cc80-5a07-4360-8b2f-27fa0b5d3f3c")
+	)
+	(embedded_fonts no)
+	(model "${KISYS3DMOD}/Connector_Molex.3dshapes/Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

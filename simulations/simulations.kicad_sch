@@ -6883,10 +6883,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "689fdb4f-6b45-4b54-a326-11168c8f2551")
 		(property "Reference" "R8"
-			(at 177.8 48.26 90)
+			(at 180.594 57.404 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6894,7 +6893,7 @@
 			)
 		)
 		(property "Value" "47k"
-			(at 177.8 50.8 90)
+			(at 176.022 58.166 90)
 			(effects
 				(font
 					(size 1.27 1.27)

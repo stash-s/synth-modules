@@ -21,6 +21,7 @@
       "showGrid": true,
       "traces": [
         {
+<<<<<<< HEAD
           "color": "rgb(141, 160, 203)",
           "signal": "V(RAMP_DOWN)",
           "trace_type": 257
@@ -44,6 +45,16 @@
           "color": "rgb(252, 141, 98)",
           "signal": "V(VIRT_INPUT_2)",
           "trace_type": 257
+=======
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(Net-_U1-+_)",
+          "trace_type": 257
+        },
+        {
+          "color": "rgb(55, 126, 184)",
+          "signal": "V(OUTPUT)",
+          "trace_type": 257
+>>>>>>> 642c19a (VCA v. 2.0)
         }
       ]
     },

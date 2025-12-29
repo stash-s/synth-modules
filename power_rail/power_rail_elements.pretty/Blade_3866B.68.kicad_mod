@@ -1,0 +1,215 @@
+(footprint "Blade_3866B.68"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Molex KK-254 Interconnect System, old/engineering part number: AE-6410-02A example for new part number: 22-27-2021, 2 Pins (http://www.molex.com/pdm_docs/sd/022272021_sd.pdf), generated with kicad-footprint-generator")
+	(tags "connector Molex KK-254 side entry")
+	(property "Reference" "J2"
+		(at 2.54 -2.54 0)
+		(layer "F.SilkS")
+		(uuid "d7f49e92-5f53-4206-b8d3-13a026eb5281")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Conn_01x01_Male"
+		(at 2.54 2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f9350bad-3924-4a22-9baf-d57076855208")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "26e6885e-c0c1-44ed-b160-683191bad54c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "46452ab2-9a17-4985-9050-2757931db703")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -1.6 -0.6)
+		(end 6.6 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bda6a979-cc75-4de6-93a0-f1c9757da1ee")
+	)
+	(fp_line
+		(start -1.6 0.6)
+		(end -1.6 -0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b47e430a-cef0-459d-9142-737a60b82a59")
+	)
+	(fp_line
+		(start -1.6 0.6)
+		(end 6.6 0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6b4433e8-f1ec-4edc-9ba1-d6d42dda0241")
+	)
+	(fp_line
+		(start 6.6 -0.6)
+		(end 6.6 0.6)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f74d44d6-d943-4568-8713-64f52289c897")
+	)
+	(fp_line
+		(start -1.8 -0.8)
+		(end -1.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "79601580-d896-42f6-9c93-cdea185525d9")
+	)
+	(fp_line
+		(start -1.8 -0.8)
+		(end 6.8 -0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3eeb441b-b3b4-4cc0-bb05-0c5da47d66ef")
+	)
+	(fp_line
+		(start -1.8 0.8)
+		(end 6.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c231a535-41aa-4aee-87cb-b7e3800b681f")
+	)
+	(fp_line
+		(start 6.8 -0.8)
+		(end 6.8 0.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d9a5e427-3555-47e7-8d33-1e3b38a2ec22")
+	)
+	(fp_line
+		(start -1.5 -0.5)
+		(end -1.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "304c5aa9-7632-4fd2-bb79-eb8121f1374e")
+	)
+	(fp_line
+		(start -1.5 -0.5)
+		(end 6.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c27456a9-690f-4156-ba2c-6cb7ac2b1de6")
+	)
+	(fp_line
+		(start -1.5 0.5)
+		(end 6.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8ee33e6c-aabf-4600-9d04-7a798209a868")
+	)
+	(fp_line
+		(start 6.5 -0.5)
+		(end 6.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1ce608bf-a9bd-4e32-9995-ebb81cca8212")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2.54 -2.54 0)
+		(layer "F.Fab")
+		(uuid "72d74c53-c65c-4dea-b3c6-094198be6cdd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 2.5 2.5)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "68a86fda-dccc-47ee-ba59-83bd319c8160")
+	)
+	(pad "1" thru_hole circle
+		(at 5 0)
+		(size 2.54 2.54)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e31d7816-5ee2-4c4d-b30f-85124896959c")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/power_rail_elements.3dmodels/Blade_3866B.68.step"
+		(offset
+			(xyz 2.54 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
