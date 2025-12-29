@@ -229,7 +229,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -250,7 +250,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "simulations.kicad_pro",
+    "filename": "ota-sine-wave-converter.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -396,14 +396,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": "schmitt_trigger.wbk"
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -416,11 +408,6 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [
-    [
-      "b3d4c941-243a-4cc7-8645-5c0d36485592",
-      "Root"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {}
 }
