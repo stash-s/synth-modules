@@ -103,6 +103,6 @@ class EurorackPanel(FootprintWizardBase.FootprintWizard):
         self.draw.SetLayer(pcbnew.Edge_Cuts)
         self.draw.SetLineThickness(pcbnew.FromMM(0.05))
         self.draw.Box(0, 0, pcb_width, pcb_height)
-        
+
 
 EurorackPanel().register()

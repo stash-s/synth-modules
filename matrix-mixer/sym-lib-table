@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "V_Linear")(type "KiCad")(uri "/home/stash/.wine/drive_c/Program Files (x86)/VeeCAD/Library/Kicad2/V_Linear.kicad_sym")(options "")(descr ""))
+)

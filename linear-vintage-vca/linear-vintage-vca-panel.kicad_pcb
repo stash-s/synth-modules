@@ -341,101 +341,6 @@
 			)
 		)
 	)
-	(footprint "PCM_kikit:Board"
-		(layer "F.Cu")
-		(uuid "0684c070-a273-4282-96a7-89b24322e186")
-		(at 81.4832 43.688)
-		(descr "Mark board for extraction")
-		(property "Reference" "A"
-			(at -4.5 -5 0)
-			(layer "Dwgs.User")
-			(uuid "66bd3727-6407-4a1e-a006-5f222076cae7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Board"
-			(at -7.25 -5 0)
-			(layer "Dwgs.User")
-			(uuid "37bc993f-15e7-48f1-841e-d7182cd3c082")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "96ba9368-eeb5-4381-842e-489d13c2358c")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4156fbe2-42d7-443b-aad9-8d00730f7ac9")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-		(fp_line
-			(start -1.25 -4)
-			(end -9.25 -4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "ccbd1143-09f0-43b3-adc5-36e7177a3b0e")
-		)
-		(fp_line
-			(start 0 0)
-			(end -1.25 -4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "b178100f-1f52-45ee-8dea-046dde7c37c0")
-		)
-		(fp_line
-			(start 0 0)
-			(end -1 -0.5)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "aff6bd4f-048d-423c-b0f2-c3550a751083")
-		)
-		(fp_line
-			(start 0 0)
-			(end 0.5 -1)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "6366b7b4-1de0-4bff-833e-c26d6a15b429")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Capacitor_THT:C_Rect_L7.0mm_W2.0mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "08dec86e-46e5-4544-a13f-9ad308e9887b")
@@ -18187,101 +18092,6 @@
 			)
 		)
 	)
-	(footprint "PCM_kikit:Board"
-		(layer "F.Cu")
-		(uuid "f4d8e485-67c2-45a8-b109-aa2ab015fe8a")
-		(at 35.8394 43.688)
-		(descr "Mark board for extraction")
-		(property "Reference" "B"
-			(at -4.5 -5 0)
-			(layer "Dwgs.User")
-			(uuid "4bca5087-58b0-467a-ae30-c7da645836ff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Board"
-			(at -7.25 -5 0)
-			(layer "Dwgs.User")
-			(uuid "83b1b2b3-a0bc-42f2-ba51-348cf3b638cc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "82b8ee52-c987-452b-baf6-bbadb8989bc3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "554e44a9-ea8a-44f2-b80d-8843ea7f30aa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
-		(fp_line
-			(start -1.25 -4)
-			(end -9.25 -4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "5db91a95-1509-47c3-8025-70f7b152c25e")
-		)
-		(fp_line
-			(start 0 0)
-			(end -1.25 -4)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "daf57302-980e-4b29-babf-ba767caae0dd")
-		)
-		(fp_line
-			(start 0 0)
-			(end -1 -0.5)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "6b8be9e0-6ce8-4f8a-be53-f0e11ab5e511")
-		)
-		(fp_line
-			(start 0 0)
-			(end 0.5 -1)
-			(stroke
-				(width 0.2)
-				(type solid)
-			)
-			(layer "Dwgs.User")
-			(uuid "12a733e2-74b3-439f-882f-f5d5fc505f65")
-		)
-		(embedded_fonts no)
-	)
 	(footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "f9b5e1ab-2f5a-4fd5-b151-ce3d0890d848")
@@ -20024,6 +19834,17 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "70f1176d-195a-4896-b340-295fef85c8b3")
+	)
+	(gr_rect
+		(start 116.967 34.429)
+		(end 146.967 162.929)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "74669d16-8d3a-4bc0-ad26-ad1a991cee2e")
 	)
 	(gr_rect
 		(start 75.7365 43.679)
