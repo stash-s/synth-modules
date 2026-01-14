@@ -9156,7 +9156,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "20k"
 			(at 153.67 67.31 90)
 			(effects
 				(font
@@ -11887,7 +11887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 142.24 125.73 0)
 			(effects
 				(font
@@ -12771,7 +12771,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "20k"
 			(at 153.67 156.21 90)
 			(effects
 				(font
