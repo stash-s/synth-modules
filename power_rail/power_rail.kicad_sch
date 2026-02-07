@@ -5,7 +5,7 @@
 	(uuid "6cb15059-e034-4ae3-ae21-fedaef6209e3")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_01x01_Pin"
+		(symbol "Connector:Conn_01x06_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -14,15 +14,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 2.54 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x01_Pin"
-				(at 0 -2.54 0)
+			(property "Value" "Conn_01x06_Socket"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -47,7 +47,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x01, script generated"
+			(property "Description" "Generic connector, single row, 01x06, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -82,21 +82,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x01_Pin_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x06_Socket_1_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy -1.27 5.08) (xy -0.508 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -106,8 +95,140 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -0.508 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -7.62) (xy -0.508 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 4.572)
+					(mid -0.5058 5.08)
+					(end 0 5.588)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -8.128)
+					(mid -0.5058 -7.62)
+					(end 0 -7.112)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -117,6 +238,96 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -979,6 +1190,89 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -6534,71 +6828,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 43.18 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "088c7182-6320-4739-9458-201b12c3b4f4")
-		(property "Reference" "J13"
-			(at 267.335 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "479f2c4a-2d76-432c-9016-62485d97eea8")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Small")
 		(at 40.64 81.28 90)
 		(unit 1)
@@ -6676,33 +6905,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 40.64 180)
+		(lib_id "Mechanical:MountingHole")
+		(at 142.24 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "17f1fd22-78a5-40de-b365-f0853f375c5a")
-		(property "Reference" "J12"
-			(at 267.335 35.56 0)
+		(uuid "18df62b9-1a21-4c37-af10-86d3fb5bd029")
+		(property "Reference" "H3"
+			(at 144.78 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 38.1 0)
+		(property "Value" "MountingHole"
+			(at 144.78 90.1699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 40.64 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 142.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6711,7 +6942,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 267.97 40.64 0)
+			(at 142.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6719,22 +6950,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 40.64 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 142.24 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "37bf164a-b9a4-474c-b0bd-37e8b68607a3")
 		)
 		(instances
 			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J12")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -6851,33 +7079,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 35.56 180)
+		(lib_id "Mechanical:MountingHole")
+		(at 142.24 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2563bb46-c9f1-48a7-ae71-14c7deeee242")
-		(property "Reference" "J8"
-			(at 267.335 30.48 0)
+		(uuid "26e9f067-ec9a-4c74-90ff-0de29bad035c")
+		(property "Reference" "H4"
+			(at 144.78 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 33.02 0)
+		(property "Value" "MountingHole"
+			(at 144.78 97.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 35.56 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 142.24 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6886,7 +7116,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 267.97 35.56 0)
+			(at 142.24 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6894,22 +7124,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 35.56 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 142.24 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "a55a9ce7-92a4-4a21-890d-5bacee728ed0")
 		)
 		(instances
-			(project ""
+			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J8")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7026,16 +7253,24 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 38.1 0)
+		(lib_id "Connector:Conn_01x06_Socket")
+		(at 24.13 40.64 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31e1fb23-8321-42f4-8c66-4653edff6a3e")
-		(property "Reference" "J16"
+		(uuid "3d2a119f-e436-4ad8-9a9e-962cb2789cf1")
+		(property "Reference" "J10"
+			(at 24.765 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06_Socket"
 			(at 24.765 33.02 0)
 			(effects
 				(font
@@ -7043,16 +7278,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 38.1 0)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal"
+			(at 24.13 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7061,7 +7288,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 38.1 0)
+			(at 24.13 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7069,22 +7296,117 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 38.1 0)
+		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 24.13 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "2"
+			(uuid "5819ff0a-d6f1-4fcd-844b-0f08af32a3ba")
+		)
+		(pin "3"
+			(uuid "5c1d5295-e160-4fcc-8464-c9cebc02a132")
+		)
+		(pin "6"
+			(uuid "c7cca319-1c75-442a-a608-8c18fa53ce98")
+		)
+		(pin "4"
+			(uuid "09c37271-b5b5-4937-8bff-ff0c514b8e02")
+		)
+		(pin "5"
+			(uuid "06f4e3c7-0ffe-41fd-8c71-3688e387f495")
 		)
 		(pin "1"
-			(uuid "8dfead03-2b92-45ca-b530-34797bb58830")
+			(uuid "dec789aa-78b3-4853-9fca-2e905aa3d598")
+		)
+		(instances
+			(project ""
+				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x06_Socket")
+		(at 267.97 43.18 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3e54f552-0315-4427-86ab-243ea98f3545")
+		(property "Reference" "J1"
+			(at 267.335 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x06_Socket"
+			(at 267.335 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal"
+			(at 267.97 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 267.97 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x06, script generated"
+			(at 267.97 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c80e111-4def-4c4f-aada-ccae77afb271")
+		)
+		(pin "3"
+			(uuid "cf37f02a-8ab8-4bcb-91f5-6f7946bb33f4")
+		)
+		(pin "6"
+			(uuid "213f8351-d17d-43f3-8265-04a9c6dbde2c")
+		)
+		(pin "4"
+			(uuid "e3875a94-8071-4181-a8af-e8f6368b2d34")
+		)
+		(pin "5"
+			(uuid "18d0a359-506c-41ae-8866-219dac343743")
+		)
+		(pin "1"
+			(uuid "910b36b5-9acd-485b-a10e-00d29bcc3a7e")
 		)
 		(instances
 			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J16")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -7346,136 +7668,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "72e7a603-4ac5-42b9-ba55-18692da13329")
-		(property "Reference" "J20"
-			(at 24.765 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "373bff1f-41b7-4ef8-b1ff-050436e30c4a")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79f69d96-b9b2-4c16-ae6b-d1dbfcd29789")
-		(property "Reference" "J19"
-			(at 24.765 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a81e454b-24e3-41c1-a936-a6c23b32f095")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Small")
 		(at 55.88 81.28 90)
 		(unit 1)
@@ -7553,33 +7745,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 45.72 180)
+		(lib_id "Mechanical:MountingHole")
+		(at 140.97 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "88a4e5cf-7d3f-46c0-b4a3-4fa888658b93")
-		(property "Reference" "J14"
-			(at 267.335 40.64 0)
+		(uuid "947998f3-711b-4fb5-b616-a34a5f72443d")
+		(property "Reference" "H2"
+			(at 143.51 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 43.18 0)
+		(property "Value" "MountingHole"
+			(at 143.51 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 45.72 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 140.97 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,7 +7782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 267.97 45.72 0)
+			(at 140.97 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7596,152 +7790,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 45.72 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 140.97 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "de610198-faa4-4953-86fc-57699613eabd")
 		)
 		(instances
 			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 48.26 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c92726f-3cee-44e7-aabd-b1ab28831533")
-		(property "Reference" "J15"
-			(at 267.335 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "50c0cf26-26d9-4922-933a-7c4d60be1474")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 267.97 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a1f4222-c977-45c6-a0c4-0f65172ee41e")
-		(property "Reference" "J11"
-			(at 267.335 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 267.335 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 267.97 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d672244-1c74-4ee1-9a87-5db08277580d")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J11")
+					(reference "H2")
 					(unit 1)
 				)
 			)
@@ -7994,33 +8055,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 43.18 0)
+		(lib_id "Mechanical:MountingHole")
+		(at 142.24 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c2abfdc7-bcb1-4e11-b374-ac728e6e177d")
-		(property "Reference" "J18"
-			(at 24.765 38.1 0)
+		(uuid "c770f34e-7009-40d5-97fe-d08d614a91ed")
+		(property "Reference" "H1"
+			(at 144.78 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 40.64 0)
+		(property "Value" "MountingHole"
+			(at 144.78 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 43.18 0)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 142.24 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8029,7 +8092,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 24.13 43.18 0)
+			(at 142.24 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8037,22 +8100,19 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 43.18 0)
+		(property "Description" "Mounting Hole without connection"
+			(at 142.24 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "da5be230-3430-46b3-9164-c5e08767745a")
 		)
 		(instances
-			(project "power_rail"
+			(project ""
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J18")
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -8231,71 +8291,6 @@
 			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
 					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df6a9cf5-748f-4fd4-a8e5-0f73babfb8c4")
-		(property "Reference" "J1"
-			(at 24.765 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c84def1d-44a2-47fd-8248-3a299bb1219c")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -8516,71 +8511,6 @@
 			(project "power_rail"
 				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
 					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 24.13 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8203fec-fed9-4f0a-ae4f-1ee914e3ea66")
-		(property "Reference" "J17"
-			(at 24.765 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x01_Pin"
-			(at 24.765 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "power_rail_elements:Blade_3866B.68"
-			(at 24.13 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 24.13 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20848fb6-bb08-430d-b957-2760bd89d9f7")
-		)
-		(instances
-			(project "power_rail"
-				(path "/6cb15059-e034-4ae3-ae21-fedaef6209e3"
-					(reference "J17")
 					(unit 1)
 				)
 			)
