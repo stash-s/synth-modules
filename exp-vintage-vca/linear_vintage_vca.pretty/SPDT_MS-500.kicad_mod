@@ -1,0 +1,138 @@
+(footprint "SPDT_MS-500"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.5 -7.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "9834d486-566b-4f51-ae2d-7b18d3179317")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SPDT_MS-500"
+		(at 0.5 7.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "51596254-8a50-4594-b99b-ab5509286c5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b4ca02ff-0e54-4d62-9008-7f672dd9de0e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff3e5aa3-7500-4f12-8a5f-29d8d06c8419")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.9 -6.5)
+		(end 3.9 6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "378de764-9169-45c4-921b-1da27a4d8de2")
+	)
+	(fp_rect
+		(start -4.1 -6.7)
+		(end 4.1 6.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e1296801-f259-4941-bb77-b92cb75a2bee")
+	)
+	(fp_rect
+		(start -3.9 -6.5)
+		(end 3.9 6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "9b485548-2a34-4912-ac36-09143e920134")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "386f5425-6658-44ab-b4e3-a5e98895a952")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 -4.7)
+		(size 3.4 1.8)
+		(drill oval 2.6 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "930bbda9-8701-4991-8267-168703d8f29e")
+	)
+	(pad "2" thru_hole oval
+		(at 0 0)
+		(size 3.4 1.8)
+		(drill oval 2.6 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8312a573-0cd8-48be-951d-9dfe463db777")
+	)
+	(pad "3" thru_hole oval
+		(at 0 4.7)
+		(size 3.4 1.8)
+		(drill oval 2.6 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "63dc18e2-a8e7-4c36-a467-7a9f76dc1f4b")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/linear_vintage_vca.3dmodels/SPDT_MS-500.step"
+		(offset
+			(xyz 0 -4.7 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
+)

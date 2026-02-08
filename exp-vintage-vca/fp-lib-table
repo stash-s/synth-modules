@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "linear_vintage_vca")(type "KiCad")(uri "${KIPRJMOD}/linear_vintage_vca.pretty")(options "")(descr ""))
+)
