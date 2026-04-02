@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,10 +50,16 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.2
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -71,6 +79,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -88,6 +97,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "error",
@@ -107,9 +117,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -133,7 +146,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -180,7 +193,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,21 +222,37 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -248,7 +279,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
+        "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
@@ -259,46 +291,19 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.6
+        "track_width": 0.4,
+        "tuning_profile": ""
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "Default",
-        "pattern": "Net-(D2-A)"
-      },
-      {
-        "netclass": "Default",
         "pattern": "Net-(J9-Pin_1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "OUT_1B"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(J14-PadTN)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(R2-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(U3-Pad7)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J10-Pin_1)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3A-+)"
       },
       {
         "netclass": "Default",
@@ -306,35 +311,11 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J10-Pin_2)"
+        "pattern": "Net-(U2A-E)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J8-Pin_5)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3A--)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J8-Pin_2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J7-Pin_3)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(Q2-E)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(J13-PadTN)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(J12-Pin_1)"
+        "pattern": "unconnected-(J15-Pin_15-Pad15)"
       },
       {
         "netclass": "Default",
@@ -342,15 +323,71 @@
       },
       {
         "netclass": "Default",
+        "pattern": "Net-(U2B-C)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J13-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D1-K)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J10-Pin_1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J7-Pin_3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J9-Pin_5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R2-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J12-Pin_1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C14-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R20-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J9-Pin_3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(C3-Pad2)"
+      },
+      {
+        "netclass": "Default",
         "pattern": "CV_B"
       },
       {
         "netclass": "Default",
-        "pattern": "+12V_A"
+        "pattern": "Net-(R23-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J7-Pin_1)"
+        "pattern": "Net-(R25-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(D2-K)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3A-+)"
       },
       {
         "netclass": "Default",
@@ -358,15 +395,103 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(U1C--)"
+        "pattern": "Net-(J1-PadT)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(U3-Pad9)"
+        "pattern": "+12V_A"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J9-Pin_5)"
+        "pattern": "Net-(J10-Pin_2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1D--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U5A-E)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U3-Pad10)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3A--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R31-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J7-Pin_5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "OUT_1B"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U3C-DIODE_BIAS-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R24-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(U3A-DIODE_BIAS-Pad15)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J8-Pin_5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "OUT_2A"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J8-Pin_3)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R22-Pad1)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J3-PadT)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U1B--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "unconnected-(J14-PadTN)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R29-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(R34-Pad2)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(J10-Pin_5)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U3C--)"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "Net-(U5A-B)"
       },
       {
         "netclass": "Default",
@@ -378,27 +503,19 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(U3C-+)"
+        "pattern": "Net-(U4A--)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(J15-Pin_15-Pad15)"
+        "pattern": "Net-(R33-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(U3A-DIODE_BIAS-Pad15)"
+        "pattern": "Net-(R27-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(D1-A)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "unconnected-(U3C-DIODE_BIAS-Pad2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(R20-Pad2)"
+        "pattern": "unconnected-(U3-Pad7)"
       },
       {
         "netclass": "Default",
@@ -406,15 +523,15 @@
       },
       {
         "netclass": "Default",
+        "pattern": "Net-(D2-A)"
+      },
+      {
+        "netclass": "Default",
         "pattern": "Net-(J8-Pin_1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(Q1-E)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(U3C--)"
+        "pattern": "Net-(R10-Pad2)"
       },
       {
         "netclass": "Default",
@@ -422,51 +539,51 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(D1-K)"
+        "pattern": "unconnected-(U3-Pad9)"
       },
       {
         "netclass": "Default",
-        "pattern": "OUT_2A"
+        "pattern": "Net-(R28-Pad2)"
       },
       {
         "netclass": "Default",
-        "pattern": "unconnected-(U3-Pad10)"
+        "pattern": "Net-(J7-Pin_2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J8-Pin_3)"
+        "pattern": "Net-(J8-Pin_2)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J9-Pin_3)"
+        "pattern": "Net-(R21-Pad1)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(U1B--)"
+        "pattern": "Net-(U2A-B)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(Q1-C)"
+        "pattern": "Net-(D1-A)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J10-Pin_5)"
+        "pattern": "Net-(U4B--)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J1-PadT)"
+        "pattern": "Net-(U5B-C)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J3-PadT)"
+        "pattern": "Net-(U3C-+)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J7-Pin_5)"
+        "pattern": "Net-(U4C--)"
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(D2-K)"
+        "pattern": "Net-(U1C--)"
       },
       {
         "netclass": "Default",
@@ -478,11 +595,7 @@
       },
       {
         "netclass": "Default",
-        "pattern": "Net-(J7-Pin_2)"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "Net-(Q2-C)"
+        "pattern": "Net-(J7-Pin_1)"
       },
       {
         "netclass": "Power",
@@ -509,9 +622,23 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
+    "bus_aliases": {},
     "legacy_lib_dir": "",
-    "legacy_lib_list": []
+    "legacy_lib_list": [],
+    "top_level_sheets": [
+      {
+        "filename": "board_b.kicad_sch",
+        "name": "board_b",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ]
   },
   "sheets": [],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }

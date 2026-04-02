@@ -4,7 +4,7 @@
     {
       "analysis": "TRAN",
       "commands": [
-        ".tran 10u 150m 10m",
+        ".tran 100u 150m 10m",
         ".kicad adjustpaths",
         ".save all",
         ".probe alli",
@@ -35,8 +35,8 @@
           "trace_type": 258
         },
         {
-          "color": "rgb(152, 78, 163)",
-          "signal": "V(Net-_Q2-C_)",
+          "color": "rgb(228, 26, 28)",
+          "signal": "V(CV)",
           "trace_type": 257
         }
       ]
