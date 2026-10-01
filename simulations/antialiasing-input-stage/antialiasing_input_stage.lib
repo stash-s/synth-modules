@@ -1,0 +1,13 @@
+.model D_SCHOTTKY D(IS=1e-7 RS=10 CJO=2p BV=40 IBV=10u)
+.model D_RAIL D(IS=1e-14 RS=1)
+
+.subckt RRIO_OPAMP INP INN VDD VSS OUT
+R_in INP INN 10Meg
+E1 N_int 0 INP INN 100000
+R_pole N_int N_flt 1k
+C_pole N_flt 0 1.5915e-9
+E_buf N_raw 0 N_flt 0 1
+R_out N_raw OUT 50
+D_hi OUT VDD D_RAIL
+D_lo VSS OUT D_RAIL
+.ends RRIO_OPAMP

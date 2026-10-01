@@ -19,7 +19,7 @@ VIN IN 0 DC 0 AC 1 SIN(0 10 1k)
 * Input Protection: Dual Schottky clamping diodes to 3.3V and GND
 D_CLAMP_HI N1 3V3 D_SCHOTTKY
 D_CLAMP_LO 0 N1 D_SCHOTTKY
-.model D_SCHOTTKY D(IS=1e-7 RS=10 CJO=2p BV=40 IBV=10u)
+.include "antialiasing_input_stage.lib"
 
 * Attenuation and DC Bias Level Shifter Network (E12 series resistors)
 * Rin provides 100k Eurorack input impedance (E12)
@@ -43,23 +43,6 @@ XU1 N_INP OUT 3V3 0 OUT RRIO_OPAMP
 * STM32 ADC interface RC network (Charge reservoir and anti-aliasing pole)
 R_ADC OUT ADC_IN 100
 C_ADC ADC_IN 0 1n
-
-* Rail-to-Rail Input/Output Opamp Macro-model for 3.3V Single Rail
-.subckt RRIO_OPAMP INP INN VDD VSS OUT
-* Differential input stage with 10 Meg input resistance
-R_in INP INN 10Meg
-* High-gain stage with 10 MHz gain-bandwidth product
-E1 N_int 0 INP INN 100000
-R_pole N_int N_flt 1k
-C_pole N_flt 0 1.5915e-9
-* Unity gain buffer
-E_buf N_raw 0 N_flt 0 1
-R_out N_raw OUT 50
-* Rail clamping to VDD and VSS
-D_hi OUT VDD D_RAIL
-D_lo VSS OUT D_RAIL
-.model D_RAIL D(IS=1e-14 RS=1)
-.ends RRIO_OPAMP
 
 .control
 * AC frequency sweep from 10 Hz to 1 MHz (100 points per decade)
