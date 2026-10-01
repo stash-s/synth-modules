@@ -3,9 +3,10 @@
 * Circuit Characteristics:
 * - Single-supply 3.3V operation (VDD = 3.3V, VSS = 0V)
 * - Input: Eurorack 20V peak-to-peak (-10V to +10V bipolar audio signal)
-* - Level-shift to positive range: 0.15V to 3.16V centered at ~1.65V (0 to 3.3V acceptable by STM32 ADC)
-* - 2nd-order Sallen-Key low-pass filter (Butterworth characteristic, fc ~ 21 kHz)
-* - Output RC post-filter (100 ohm + 1 nF) for STM32 ADC charge bucket sampling
+* - Standard E12 series resistors and E6 series capacitors
+* - Level-shift to positive range: 0.31V to 3.06V centered at ~1.68V (0 to 3.3V acceptable by STM32 ADC)
+* - 2nd-order Sallen-Key low-pass filter (Butterworth characteristic, fc ~ 21.4 kHz)
+* - Output RC post-filter (100 ohm E12 + 1 nF E6) for STM32 ADC charge bucket sampling
 
 .param VDD=3.3
 
@@ -20,21 +21,21 @@ D_CLAMP_HI N1 3V3 D_SCHOTTKY
 D_CLAMP_LO 0 N1 D_SCHOTTKY
 .model D_SCHOTTKY D(IS=1e-7 RS=10 CJO=2p BV=40 IBV=10u)
 
-* Attenuation and DC Bias Level Shifter Network
-* Rin provides 100k Eurorack input impedance
+* Attenuation and DC Bias Level Shifter Network (E12 series resistors)
+* Rin provides 100k Eurorack input impedance (E12)
 R1 IN N1 100k
-* Pullup to 3.3V rail
-R_PU 3V3 N1 30.1k
-* Pulldown to ground
-R_PD N1 0 43.2k
+* Pullup to 3.3V rail (E12)
+R_PU 3V3 N1 27k
+* Pulldown to ground (E12)
+R_PD N1 0 39k
 
-* 2nd-Order Sallen-Key Low-Pass Filter
-* R2 matches the Thevenin equivalent resistance of the input network (15.0k)
-R2 N1 N_INP 15k
-* Feedback capacitor C1 from opamp output to summing node N1
+* 2nd-Order Sallen-Key Low-Pass Filter (E12 resistor, E6 capacitors)
+* R2 in E12 series
+R2 N1 N_INP 18k
+* Feedback capacitor C1 from opamp output to summing node N1 (E6 series)
 C1 OUT N1 680p
-* Filter capacitor C2 from opamp non-inverting input to ground
-C2 N_INP 0 360p
+* Filter capacitor C2 from opamp non-inverting input to ground (E6 series)
+C2 N_INP 0 330p
 
 * Rail-to-Rail Single-Supply 3.3V Opamp in Unity-Gain Buffer Configuration
 XU1 N_INP OUT 3V3 0 OUT RRIO_OPAMP

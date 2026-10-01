@@ -77,7 +77,7 @@ def process_ac():
     print(f"{'Frequency':>12} | {'Magnitude (dB)':>15} | {'Rel Gain (dB)':>15} | {'Phase (deg)':>12}")
     print("-" * 62)
     
-    key_freqs = [20.0, 100.0, 1000.0, 5000.0, 10000.0, 15000.0, 20000.0, 20890.0, 24000.0, 44100.0, 48000.0, 96000.0, 100000.0, 200000.0, 500000.0, 1000000.0]
+    key_freqs = [20.0, 100.0, 1000.0, 5000.0, 10000.0, 15000.0, 20000.0, 21380.0, 24000.0, 44100.0, 48000.0, 96000.0, 100000.0, 200000.0, 500000.0, 1000000.0]
     
     for kf in key_freqs:
         idx = np.argmin(np.abs(freq - kf))
@@ -158,7 +158,7 @@ def process_tran():
     t_ms = t * 1000.0
     
     plt.plot(t_ms, v_in, 'r-', linewidth=1.5, label='Input Signal Vin (Eurorack 20Vpp, -10V to +10V)')
-    plt.plot(t_ms, v_adc, 'b-', linewidth=2.0, label='Output to STM32 ADC (0.15V to 3.16V, Center 1.65V)')
+    plt.plot(t_ms, v_adc, 'b-', linewidth=2.0, label=f'Output to STM32 ADC ({vadc_min:.2f}V to {vadc_max:.2f}V, Center {vadc_mid:.2f}V)')
     
     # STM32 ADC boundaries
     plt.axhline(3.3, color='black', linestyle='--', linewidth=1, label='STM32 VDD Rail (3.3V)')
