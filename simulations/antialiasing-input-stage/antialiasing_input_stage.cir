@@ -2,8 +2,8 @@
 * 
 * Circuit Characteristics:
 * - Single-supply 3.3V operation (VDD = 3.3V, VSS = 0V)
-* - Input: Eurorack 10V peak-to-peak (-5V to +5V bipolar audio signal)
-* - Level-shift to positive range: 0.14V to 3.15V centered at ~1.65V (0 to 3.3V acceptable by STM32 ADC)
+* - Input: Eurorack 20V peak-to-peak (-10V to +10V bipolar audio signal)
+* - Level-shift to positive range: 0.15V to 3.16V centered at ~1.65V (0 to 3.3V acceptable by STM32 ADC)
 * - 2nd-order Sallen-Key low-pass filter (Butterworth characteristic, fc ~ 21 kHz)
 * - Output RC post-filter (100 ohm + 1 nF) for STM32 ADC charge bucket sampling
 
@@ -12,8 +12,8 @@
 * 3.3V Power Supply
 VCC 3V3 0 DC {VDD}
 
-* Signal generator: 10Vpp (5V peak), 1 kHz sine with AC magnitude 1 for frequency analysis
-VIN IN 0 DC 0 AC 1 SIN(0 5 1k)
+* Signal generator: 20Vpp (10V peak), 1 kHz sine with AC magnitude 1 for frequency analysis
+VIN IN 0 DC 0 AC 1 SIN(0 10 1k)
 
 * Input Protection: Dual Schottky clamping diodes to 3.3V and GND
 D_CLAMP_HI N1 3V3 D_SCHOTTKY
@@ -24,17 +24,17 @@ D_CLAMP_LO 0 N1 D_SCHOTTKY
 * Rin provides 100k Eurorack input impedance
 R1 IN N1 100k
 * Pullup to 3.3V rail
-R_PU 3V3 N1 60.4k
+R_PU 3V3 N1 30.1k
 * Pulldown to ground
-R_PD N1 0 150k
+R_PD N1 0 43.2k
 
 * 2nd-Order Sallen-Key Low-Pass Filter
-* R2 matches the Thevenin equivalent resistance of the input network (30.1k)
-R2 N1 N_INP 30.1k
+* R2 matches the Thevenin equivalent resistance of the input network (15.0k)
+R2 N1 N_INP 15k
 * Feedback capacitor C1 from opamp output to summing node N1
-C1 OUT N1 330p
+C1 OUT N1 680p
 * Filter capacitor C2 from opamp non-inverting input to ground
-C2 N_INP 0 180p
+C2 N_INP 0 360p
 
 * Rail-to-Rail Single-Supply 3.3V Opamp in Unity-Gain Buffer Configuration
 XU1 N_INP OUT 3V3 0 OUT RRIO_OPAMP
@@ -66,7 +66,7 @@ ac dec 100 10 1Meg
 set wr_singlescale
 wrdata ac_sim.txt v(ADC_IN) v(OUT) v(IN)
 
-* Transient simulation over 5 ms (5 cycles of 1 kHz 10Vpp input)
+* Transient simulation over 5 ms (5 cycles of 1 kHz 20Vpp input)
 tran 1u 5m 0 1u
 set wr_singlescale
 wrdata tran_sim.txt v(IN) v(OUT) v(ADC_IN) v(N1) v(N_INP)
