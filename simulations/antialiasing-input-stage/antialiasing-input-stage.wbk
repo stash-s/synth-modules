@@ -1,4 +1,5 @@
 {
+  "custom_cursors": 2,
   "last_sch_text_sim_command": "",
   "tabs": [
     {
@@ -21,19 +22,28 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(IN)",
-          "trace_type": 257
+          "color": "rgb(255, 255, 51)",
+          "signal": "V(/ADC_IN) (phase)",
+          "trace_type": 517
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(ADC_IN)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(OUT)",
-          "trace_type": 257
+          "color": "rgb(255, 255, 51)",
+          "cursor1": {
+            "position": 39655.27544921028,
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "cursor2": {
+            "position": 19997.277522234308,
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "cursorD": {
+            "x_format": "3~Hz",
+            "y_format": "3~dB"
+          },
+          "signal": "V(/ADC_IN) (gain)",
+          "trace_type": 521
         }
       ]
     },
@@ -57,23 +67,18 @@
       "showGrid": true,
       "traces": [
         {
-          "color": "rgb(228, 26, 28)",
-          "signal": "V(IN)",
+          "color": "rgb(255, 255, 51)",
+          "signal": "V(/ADC_IN)",
           "trace_type": 257
         },
         {
-          "color": "rgb(55, 126, 184)",
-          "signal": "V(ADC_IN)",
-          "trace_type": 257
-        },
-        {
-          "color": "rgb(77, 175, 74)",
-          "signal": "V(OUT)",
+          "color": "rgb(152, 78, 163)",
+          "signal": "V(/IN)",
           "trace_type": 257
         }
       ]
     }
   ],
   "user_defined_signals": [],
-  "version": 6
+  "version": 7
 }
