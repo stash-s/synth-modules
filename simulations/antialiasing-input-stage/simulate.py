@@ -145,7 +145,7 @@ def process_tran():
     vadc_mid = (vadc_max + vadc_min) / 2.0
 
     print("\n" + "="*70)
-    print("TRANSIENT RESPONSE ANALYSIS (1 kHz, 10Vpp Eurorack Input)")
+    print("TRANSIENT RESPONSE ANALYSIS (1 kHz, 20Vpp Eurorack Input)")
     print("="*70)
     print(f"Input Signal:  Vin_min = {vin_min:+.3f} V,  Vin_max = {vin_max:+.3f} V,  Vin_pp = {vin_pp:.3f} V")
     print(f"ADC Output:    Vadc_min = {vadc_min:+.3f} V, Vadc_max = {vadc_max:+.3f} V, Vadc_pp = {vadc_pp:.3f} V")
@@ -157,8 +157,8 @@ def process_tran():
     plt.figure(figsize=(10, 5))
     t_ms = t * 1000.0
     
-    plt.plot(t_ms, v_in, 'r-', linewidth=1.5, label='Input Signal Vin (Eurorack 10Vpp, -5V to +5V)')
-    plt.plot(t_ms, v_adc, 'b-', linewidth=2.0, label='Output to STM32 ADC (0.14V to 3.15V, Center 1.65V)')
+    plt.plot(t_ms, v_in, 'r-', linewidth=1.5, label='Input Signal Vin (Eurorack 20Vpp, -10V to +10V)')
+    plt.plot(t_ms, v_adc, 'b-', linewidth=2.0, label='Output to STM32 ADC (0.15V to 3.16V, Center 1.65V)')
     
     # STM32 ADC boundaries
     plt.axhline(3.3, color='black', linestyle='--', linewidth=1, label='STM32 VDD Rail (3.3V)')
@@ -166,10 +166,10 @@ def process_tran():
     plt.axhline(1.65, color='gray', linestyle=':', linewidth=1, label='ADC Midscale (1.65V)')
     
     plt.xlim([0, 3]) # First 3 ms (3 cycles)
-    plt.ylim([-6, 6])
+    plt.ylim([-12, 12])
     plt.xlabel('Time (ms)', fontsize=12)
     plt.ylabel('Voltage (V)', fontsize=12)
-    plt.title('Transient Waveform: Eurorack 10Vpp Bipolar Input to Unipolar 0-3.3V ADC Signal', fontsize=13, fontweight='bold')
+    plt.title('Transient Waveform: Eurorack 20Vpp Bipolar Input to Unipolar 0-3.3V ADC Signal', fontsize=13, fontweight='bold')
     plt.grid(True, linestyle=':', alpha=0.6)
     plt.legend(loc='upper right', fontsize=9)
     plt.tight_layout()
