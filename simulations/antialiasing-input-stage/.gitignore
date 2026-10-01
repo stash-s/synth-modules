@@ -1,0 +1,6 @@
+# Intermediate simulation raw data dumps
+ac_sim.txt
+tran_sim.txt
+
+# Track exported frequency response CSV (overriding root *.csv)
+!frequency_response.csv

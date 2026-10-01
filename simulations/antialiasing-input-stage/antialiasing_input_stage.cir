@@ -1,0 +1,76 @@
+* Eurorack to STM32 Anti-Aliasing Input Stage SPICE Simulation
+* 
+* Circuit Characteristics:
+* - Single-supply 3.3V operation (VDD = 3.3V, VSS = 0V)
+* - Input: Eurorack 10V peak-to-peak (-5V to +5V bipolar audio signal)
+* - Level-shift to positive range: 0.14V to 3.15V centered at ~1.65V (0 to 3.3V acceptable by STM32 ADC)
+* - 2nd-order Sallen-Key low-pass filter (Butterworth characteristic, fc ~ 21 kHz)
+* - Output RC post-filter (100 ohm + 1 nF) for STM32 ADC charge bucket sampling
+
+.param VDD=3.3
+
+* 3.3V Power Supply
+VCC 3V3 0 DC {VDD}
+
+* Signal generator: 10Vpp (5V peak), 1 kHz sine with AC magnitude 1 for frequency analysis
+VIN IN 0 DC 0 AC 1 SIN(0 5 1k)
+
+* Input Protection: Dual Schottky clamping diodes to 3.3V and GND
+D_CLAMP_HI N1 3V3 D_SCHOTTKY
+D_CLAMP_LO 0 N1 D_SCHOTTKY
+.model D_SCHOTTKY D(IS=1e-7 RS=10 CJO=2p BV=40 IBV=10u)
+
+* Attenuation and DC Bias Level Shifter Network
+* Rin provides 100k Eurorack input impedance
+R1 IN N1 100k
+* Pullup to 3.3V rail
+R_PU 3V3 N1 60.4k
+* Pulldown to ground
+R_PD N1 0 150k
+
+* 2nd-Order Sallen-Key Low-Pass Filter
+* R2 matches the Thevenin equivalent resistance of the input network (30.1k)
+R2 N1 N_INP 30.1k
+* Feedback capacitor C1 from opamp output to summing node N1
+C1 OUT N1 330p
+* Filter capacitor C2 from opamp non-inverting input to ground
+C2 N_INP 0 180p
+
+* Rail-to-Rail Single-Supply 3.3V Opamp in Unity-Gain Buffer Configuration
+XU1 N_INP OUT 3V3 0 OUT RRIO_OPAMP
+
+* STM32 ADC interface RC network (Charge reservoir and anti-aliasing pole)
+R_ADC OUT ADC_IN 100
+C_ADC ADC_IN 0 1n
+
+* Rail-to-Rail Input/Output Opamp Macro-model for 3.3V Single Rail
+.subckt RRIO_OPAMP INP INN VDD VSS OUT
+* Differential input stage with 10 Meg input resistance
+R_in INP INN 10Meg
+* High-gain stage with 10 MHz gain-bandwidth product
+E1 N_int 0 INP INN 100000
+R_pole N_int N_flt 1k
+C_pole N_flt 0 1.5915e-9
+* Unity gain buffer
+E_buf N_raw 0 N_flt 0 1
+R_out N_raw OUT 50
+* Rail clamping to VDD and VSS
+D_hi OUT VDD D_RAIL
+D_lo VSS OUT D_RAIL
+.model D_RAIL D(IS=1e-14 RS=1)
+.ends RRIO_OPAMP
+
+.control
+* AC frequency sweep from 10 Hz to 1 MHz (100 points per decade)
+ac dec 100 10 1Meg
+set wr_singlescale
+wrdata ac_sim.txt v(ADC_IN) v(OUT) v(IN)
+
+* Transient simulation over 5 ms (5 cycles of 1 kHz 10Vpp input)
+tran 1u 5m 0 1u
+set wr_singlescale
+wrdata tran_sim.txt v(IN) v(OUT) v(ADC_IN) v(N1) v(N_INP)
+quit
+.endc
+
+.end
