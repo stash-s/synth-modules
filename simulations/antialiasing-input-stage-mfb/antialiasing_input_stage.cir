@@ -1,0 +1,61 @@
+* Eurorack to STM32 Anti-Aliasing Input Stage SPICE Simulation
+* 
+* Circuit Characteristics:
+* - Single-supply 3.3V operation (VDD = 3.3V, VSS = 0V)
+* - Input: Eurorack 20V peak-to-peak (-10V to +10V bipolar audio signal)
+* - Standard E12 series resistors and E6 series capacitors
+* - Level-shift to positive range: 0.31V to 3.06V centered at ~1.68V (0 to 3.3V acceptable by STM32 ADC)
+* - 2nd-order multiple-feedback low-pass filter (Butterworth, fc ~ 20.8 kHz)
+* - Output RC post-filter (100 ohm E12 + 1 nF E6) for STM32 ADC charge bucket sampling
+
+.param VDD=3.3
+
+* 3.3V Power Supply
+VCC 3V3 0 DC {VDD}
+
+* Signal generator: 20Vpp (10V peak), 1 kHz sine with AC magnitude 1 for frequency analysis
+VIN IN 0 DC 0 AC 1 SIN(0 10 1k)
+
+* Input Protection: Dual Schottky clamping diodes to 3.3V and GND
+D_CLAMP_HI N1 3V3 D_SCHOTTKY
+D_CLAMP_LO 0 N1 D_SCHOTTKY
+.include "antialiasing_input_stage.lib"
+
+* Attenuation and DC bias network (E12 values)
+R_IN IN N1 100k
+R_PU 3V3 N1 27k
+R_PD N1 0 39k
+
+* Equal E12 divider places VREF at mid-supply for the inverting MFB stage
+R_REF_PU 3V3 VREF 33k
+R_REF_PD VREF 0 33k
+C_REF VREF 0 10u
+
+* 2nd-order MFB low-pass; effective R1 includes the N1 Thevenin resistance
+R1 N1 N_MFB 100k
+R3 N_MFB N_INV 3.9k
+R4 OUT N_MFB 100k
+C2 N_MFB 0 1.5n
+C5 OUT N_INV 100p
+
+* Rail-to-rail op-amp on a single 3.3V supply; non-inverting input at VREF
+XU1 VREF N_INV 3V3 0 OUT RRIO_OPAMP
+
+* STM32 ADC interface RC network (Charge reservoir and anti-aliasing pole)
+R_ADC OUT ADC_IN 100
+C_ADC ADC_IN 0 1n
+
+.control
+* AC frequency sweep from 10 Hz to 1 MHz (100 points per decade)
+ac dec 100 10 1Meg
+set wr_singlescale
+wrdata ac_sim.txt v(ADC_IN) v(OUT) v(IN)
+
+* Transient simulation over 5 ms (5 cycles of 1 kHz 20Vpp input)
+tran 1u 5m 0 1u
+set wr_singlescale
+wrdata tran_sim.txt v(IN) v(OUT) v(ADC_IN) v(N1) v(N_MFB)
+quit
+.endc
+
+.end
