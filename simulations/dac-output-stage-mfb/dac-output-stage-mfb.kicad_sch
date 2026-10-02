@@ -1301,6 +1301,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -1424,6 +1563,121 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:-12V"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "-12V"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"-12V\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "-12V_0_0"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "-12V_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 			)
@@ -1637,261 +1891,7 @@
 			)
 			(embedded_fonts no)
 		)
-	
-		(symbol "power:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:-12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "-12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"-12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "-12V_0_0"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "-12V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(embedded_fonts no)
-		))
+	)
 	(junction
 		(at 115.57 76.2)
 		(diameter 0)
@@ -2028,6 +2028,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 107.95) (xy 87.63 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c2e615-3617-4e5b-a99b-f717aad4f952")
+	)
+	(wire
+		(pts
 			(xy 116.84 81.28) (xy 115.57 81.28)
 		)
 		(stroke
@@ -2125,6 +2135,26 @@
 			(type default)
 		)
 		(uuid "97392fb9-3e9c-407a-97e0-f89efbcba3a9")
+	)
+	(wire
+		(pts
+			(xy 118.11 50.8) (xy 134.62 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f242a7-cb0c-4742-b02c-48aefc5d1370")
+	)
+	(wire
+		(pts
+			(xy 111.76 107.95) (xy 115.57 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab800a5f-c057-4808-8df2-592bc0f16c98")
 	)
 	(wire
 		(pts
@@ -2238,16 +2268,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 50.8) (xy 121.92 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5b95310-0000-4000-8000-000000000010")
-	)
-	(wire
-		(pts
 			(xy 43.18 144.78) (xy 43.18 152.4)
 		)
 		(stroke
@@ -2265,6 +2285,46 @@
 			(type default)
 		)
 		(uuid "f5b95310-0000-4000-8000-000000000013")
+	)
+	(wire
+		(pts
+			(xy 83.82 107.95) (xy 83.82 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b95320-0000-4000-8000-000000000001")
+	)
+	(wire
+		(pts
+			(xy 83.82 119.38) (xy 83.82 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b95320-0000-4000-8000-000000000002")
+	)
+	(wire
+		(pts
+			(xy 111.76 107.95) (xy 111.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b95320-0000-4000-8000-000000000003")
+	)
+	(wire
+		(pts
+			(xy 111.76 119.38) (xy 111.76 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b95320-0000-4000-8000-000000000004")
 	)
 	(wire
 		(pts
@@ -2380,7 +2440,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0e30a749-d27a-4250-bd41-a7e5973da812")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR02"
 			(at 43.18 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2437,7 +2497,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR014")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -2454,7 +2514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1330966e-e7bc-421f-bce1-e931017efbb0")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR05"
 			(at 50.8 127 0)
 			(hide yes)
 			(show_name no)
@@ -2511,7 +2571,411 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR03")
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "VDC_1")
+		(lib_id "Simulation_SPICE:VDC")
+		(at 111.76 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d71b1a9-ef39-4d1a-9d8a-64b5731432c3")
+		(property "Reference" "V3"
+			(at 115.57 112.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "-12"
+			(at 115.57 115.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Params" "dc=-12"
+			(at 111.76 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b0c68b25-7700-45a5-88b1-4f2e8279ad08")
+		)
+		(pin "1"
+			(uuid "b79823f1-8848-48c5-a6c7-6391c43772ed")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "V3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 115.57 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a6812de-ae26-45e1-8ce5-bb4f4179abac")
+		(property "Reference" "#FLG04"
+			(at 115.57 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 115.57 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38a9b841-121c-4cc9-9b92-ee20153c8c6f")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "VDC_1")
+		(lib_id "Simulation_SPICE:VDC")
+		(at 83.82 114.3 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5bf49059-02db-45df-83d1-41dfda207456")
+		(property "Reference" "V2"
+			(at 87.63 112.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12"
+			(at 87.63 115.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Voltage source, DC"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Params" "dc=12"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0fecc33a-7c65-4d96-8630-238ab7cff384")
+		)
+		(pin "1"
+			(uuid "f7136324-cf2d-45d4-8901-597222cb209f")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "V2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "61baa7bb-0445-4a6a-b144-8874926ac3c3")
+		(property "Reference" "#PWR011"
+			(at 111.76 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f031e4f6-1fcb-4f0d-8955-1b5663180355")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -2528,7 +2992,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "68e25c59-7670-44d8-bd58-6113132164d9")
-		(property "Reference" "C5"
+		(property "Reference" "C2"
 			(at 121.666 56.642 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2587,7 +3051,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "C5")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -2604,7 +3068,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6d58a22e-3b52-4d9d-8783-8a7b3b05b2b9")
-		(property "Reference" "R_OUT"
+		(property "Reference" "R_OUT1"
 			(at 151.13 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2663,7 +3127,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "R_OUT")
+					(reference "R_OUT1")
 					(unit 1)
 				)
 			)
@@ -2680,7 +3144,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f1b0dd9-8c29-4c18-951f-c6a144eb5da5")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR04"
 			(at 50.8 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2737,7 +3201,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR02")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2756,7 +3220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7249067c-f960-46dd-9c68-57ba5b5b5cfd")
-		(property "Reference" "V2"
+		(property "Reference" "V1"
 			(at 54.61 112.9001 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2854,7 +3318,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "V2")
+					(reference "V1")
 					(unit 1)
 				)
 			)
@@ -2871,7 +3335,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "74f72ab2-c025-468a-a3b0-acad62dcaaa2")
-		(property "Reference" "C2"
+		(property "Reference" "C1"
 			(at 104.394 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2930,7 +3394,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2947,7 +3411,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7f025a4b-eb40-4fc7-af9e-c6c70d317946")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR06"
 			(at 55.88 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -3004,7 +3468,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR013")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3021,7 +3485,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8721b3ea-c0fa-4740-b363-d22fc7b89151")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR013"
 			(at 121.92 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -3078,7 +3542,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR010")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3095,7 +3559,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "907e1f9f-6baa-4105-8fe4-ebb761dac795")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR09"
 			(at 101.6 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -3152,7 +3616,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR08")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3295,6 +3759,154 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 83.82 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "94c3b365-4ee0-4156-8cf6-9c87f43b7597")
+		(property "Reference" "#PWR08"
+			(at 83.82 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 83.82 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d760642c-59c8-4f24-9175-3a95769c65b4")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "95c636ae-fea6-4092-9923-b78de28ad133")
+		(property "Reference" "#FLG03"
+			(at 87.63 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 87.63 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d276a795-a417-4938-aa89-6d6172dbfd7b")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:-12V")
 		(at 121.92 69.85 0)
 		(unit 1)
@@ -3305,7 +3917,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a0e526c4-5592-4b92-b97d-f429057b766f")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR012"
 			(at 121.92 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3362,7 +3974,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR09")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3379,7 +3991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a8951c43-f592-4e66-937a-0c0475b4c03f")
-		(property "Reference" "C_OUT"
+		(property "Reference" "C_OUT1"
 			(at 171.196 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3438,7 +4050,155 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "C_OUT")
+					(reference "C_OUT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-12V")
+		(at 111.76 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af4e7ad1-5607-4d20-856d-0adc2f9c134d")
+		(property "Reference" "#PWR010"
+			(at 111.76 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "-12V"
+			(at 111.76 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35337847-7ad3-4dbe-b00c-38579806a2d9")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 83.82 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb97b9e1-18ed-4037-bfeb-9c4d7234199d")
+		(property "Reference" "#PWR07"
+			(at 83.82 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 83.82 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 83.82 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b1a3ae5-feba-4be1-b4c9-4abdee285ed6")
+		)
+		(instances
+			(project "dac-output-stage-mfb"
+				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -3531,7 +4291,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2392e37-bfbc-4452-9109-7000d393400b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR03"
 			(at 43.18 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -3588,7 +4348,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR012")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -3605,7 +4365,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d39a998b-5ad7-414f-9ad4-247947757cde")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR014"
 			(at 165.1 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -3662,7 +4422,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR011")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -3680,7 +4440,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dee07b6a-3236-42b1-89a7-51f5d7629898")
-		(property "Reference" "VDAC"
+		(property "Reference" "VDAC1"
 			(at 29.21 110.3601 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3789,7 +4549,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "VDAC")
+					(reference "VDAC1")
 					(unit 1)
 				)
 			)
@@ -4028,7 +4788,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b95301-0000-4000-8000-000000000001")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 109.22 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4090,7 +4850,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4107,7 +4867,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b95302-0000-4000-8000-000000000001")
-		(property "Reference" "R4A"
+		(property "Reference" "R4A1"
 			(at 114.3 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4117,7 +4877,7 @@
 				)
 			)
 		)
-		(property "Value" "560k"
+		(property "Value" "620k"
 			(at 114.3 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4169,7 +4929,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "R4A")
+					(reference "R4A1")
 					(unit 1)
 				)
 			)
@@ -4186,7 +4946,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b95303-0000-4000-8000-000000000001")
-		(property "Reference" "R_REF_PU"
+		(property "Reference" "R_REF_PU1"
 			(at 46.99 139.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4248,7 +5008,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "R_REF_PU")
+					(reference "R_REF_PU1")
 					(unit 1)
 				)
 			)
@@ -4265,7 +5025,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b95304-0000-4000-8000-000000000001")
-		(property "Reference" "R_REF_PD"
+		(property "Reference" "R_REF_PD1"
 			(at 46.99 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4327,7 +5087,7 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "R_REF_PD")
+					(reference "R_REF_PD1")
 					(unit 1)
 				)
 			)
@@ -4344,7 +5104,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f5b95305-0000-4000-8000-000000000001")
-		(property "Reference" "C_REF"
+		(property "Reference" "C_REF1"
 			(at 59.69 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4406,701 +5166,12 @@
 		(instances
 			(project "dac-output-stage-mfb"
 				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "C_REF")
+					(reference "C_REF1")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(symbol
-		(lib_name "VDC_1")
-		(lib_id "Simulation_SPICE:VDC")
-		(at 83.82 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bf49059-02db-45df-83d1-41dfda207456" )
-		(property "Reference" "V3"
-			(at 87.63 112.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "12"
-			(at 87.63 115.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 83.82 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Params" "dc=12" (at 83.82 114.3 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(pin "2"
-			(uuid "0fecc33a-7c65-4d96-8630-238ab7cff384" )
-		)
-		(pin "1"
-			(uuid "f7136324-cf2d-45d4-8901-597222cb209f" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "V3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "VDC_1")
-		(lib_id "Simulation_SPICE:VDC")
-		(at 111.76 114.3 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d71b1a9-ef39-4d1a-9d8a-64b5731432c3" )
-		(property "Reference" "V4"
-			(at 115.57 112.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "-12"
-			(at 115.57 115.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Voltage source, DC"
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 111.76 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Sim.Params" "dc=-12" (at 111.76 114.3 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27))))
-		(pin "2"
-			(uuid "b0c68b25-7700-45a5-88b1-4f2e8279ad08" )
-		)
-		(pin "1"
-			(uuid "b79823f1-8848-48c5-a6c7-6391c43772ed" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "V4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 83.82 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bb97b9e1-18ed-4037-bfeb-9c4d7234199d" )
-		(property "Reference" "#PWR014"
-			(at 83.82 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 83.82 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b1a3ae5-feba-4be1-b4c9-4abdee285ed6" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-12V")
-		(at 111.76 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "af4e7ad1-5607-4d20-856d-0adc2f9c134d" )
-		(property "Reference" "#PWR015"
-			(at 111.76 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "-12V"
-			(at 111.76 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "35337847-7ad3-4dbe-b00c-38579806a2d9" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 83.82 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "94c3b365-4ee0-4156-8cf6-9c87f43b7597" )
-		(property "Reference" "#PWR016"
-			(at 83.82 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 83.82 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d760642c-59c8-4f24-9175-3a95769c65b4" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 111.76 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "61baa7bb-0445-4a6a-b144-8874926ac3c3" )
-		(property "Reference" "#PWR017"
-			(at 111.76 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 124.46 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f031e4f6-1fcb-4f0d-8955-1b5663180355" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 87.63 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "95c636ae-fea6-4092-9923-b78de28ad133" )
-		(property "Reference" "#FLG03"
-			(at 87.63 106.045 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 87.63 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d276a795-a417-4938-aa89-6d6172dbfd7b" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 115.57 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4a6812de-ae26-45e1-8ce5-bb4f4179abac" )
-		(property "Reference" "#FLG04"
-			(at 115.57 106.045 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 115.57 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "38a9b841-121c-4cc9-9b92-ee20153c8c6f" )
-		)
-		(instances
-			(project "dac-output-stage-mfb"
-				(path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
-					(reference "#FLG04")
-					(unit 1)
-				)
-			)
-		)
-	)
-		(symbol (lib_id "Device:R") (at 125.73 50.8 90) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "f6122f5d-e6ba-425e-b84d-7beee7813bea") (property "Reference" "R4B" (at 125.73 46.99 0) (effects (font (size 1.27 1.27)))) (property "Value" "56k" (at 125.73 54.61 0) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 125.73 50.8 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 125.73 50.8 0) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 125.73 50.8 0) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "293b72db-b955-4241-8bbb-c470a8501352")) (pin "2" (uuid "111767ec-a334-4b21-85bd-00e3f9353b82")) (instances (project "dac-output-stage-mfb" (path "/fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51" (reference "R4B") (unit 1)))) )
-		(wire (pts (xy 118.11 50.8) (xy 121.92 50.8)) (stroke (width 0) (type default)) (uuid "a7f242a7-cb0c-4742-b02c-48aefc5d1370"))
-		(wire (pts (xy 129.54 50.8) (xy 134.62 50.8)) (stroke (width 0) (type default)) (uuid "d3819f14-a807-4ff2-96d5-7f153fd45c45"))
-		(wire (pts (xy 83.82 107.95) (xy 87.63 107.95)) (stroke (width 0) (type default)) (uuid "34c2e615-3617-4e5b-a99b-f717aad4f952"))
-		(wire (pts (xy 111.76 107.95) (xy 115.57 107.95)) (stroke (width 0) (type default)) (uuid "ab800a5f-c057-4808-8df2-592bc0f16c98"))
-	(wire (pts (xy 83.82 107.95) (xy 83.82 109.22)) (stroke (width 0) (type default)) (uuid "f5b95320-0000-4000-8000-000000000001"))
-	(wire (pts (xy 83.82 119.38) (xy 83.82 120.65)) (stroke (width 0) (type default)) (uuid "f5b95320-0000-4000-8000-000000000002"))
-	(wire (pts (xy 111.76 107.95) (xy 111.76 109.22)) (stroke (width 0) (type default)) (uuid "f5b95320-0000-4000-8000-000000000003"))
-	(wire (pts (xy 111.76 119.38) (xy 111.76 120.65)) (stroke (width 0) (type default)) (uuid "f5b95320-0000-4000-8000-000000000004"))
 	(sheet_instances
 		(path "/"
 			(page "1")

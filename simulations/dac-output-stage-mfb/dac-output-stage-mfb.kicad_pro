@@ -648,7 +648,7 @@
         "version": 0
       },
       "model_mode": 4,
-      "workbook_filename": "dac-output-stage-mfb.wbk"
+      "workbook_filename": ""
     },
     "page_layout_descr_file": "",
     "plot_directory": "",
@@ -675,7 +675,7 @@
         "uuid": "fb7ea5f1-2dca-4b2b-ab68-2aba643dcf51"
       }
     ],
-    "used_designators": "U1,R1,R3,R4A,R4B,R_REF_PU,R_REF_PD,R_OUT,C2,C5,C_REF,C_OUT,VDAC,V2,V3,V4,#PWR01-17,#FLG01-04",
+    "used_designators": "R1-3,R_REF_PD1,R_REF_PD,#FLG1-4,C_REF1,C_REF,V1-4,#PWR1-17,R4B1,R4B,R_REF_PU1,R_REF_PU,R_OUT1,R_OUT,C1-2,C5,VDAC1,VDAC,R4A1,R4A,U1,C_OUT1,C_OUT",
     "variants": []
   },
   "sheets": [
