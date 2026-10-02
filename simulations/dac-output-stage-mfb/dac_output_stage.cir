@@ -1,0 +1,50 @@
+* STM32 DAC to Eurorack Output Stage MFB Simulation
+* 
+* Circuit Characteristics:
+* - Op-amp supply: +/-12V
+* - Input: 0V to 3.3V DAC signal, centered on 1.65V for AC/transient tests
+* - Standard E12 series resistors and E6 series capacitors
+* - 2nd-order multiple-feedback low-pass filter, fc ~19.4kHz, Q~0.706
+* - Output range near +/-10V, with a 100 ohm / 1nF output isolation pole
+
+VIN IN 0 DC 1.65 AC 1 SIN(1.65 1.65 1k)
+VPLUS VP 0 DC 12
+VMINUS VN 0 DC -12
+VADC 3V3 0 DC 3.3
+
+.include "dac_output_stage.lib"
+
+* 1.355V non-inverting reference keeps the inverted DAC span inside +/-12V
+R_REF_PU 3V3 VREF 56k
+R_REF_PD VREF 0 39k
+C_REF VREF 0 10u
+
+* 2nd-order inverting MFB low-pass, with R4 split into E12 series values
+R1 IN N_MFB 100k
+R3 N_MFB N_INV 22k
+R4A OUT N_FB 560k
+R4B N_FB N_MFB 56k
+C2 N_MFB 0 330p
+C5 OUT N_INV 15p
+
+* Bipolar-supply amplifier; output polarity is inverted relative to the DAC input
+XU1 VREF N_INV VP VN OUT RRIO_OPAMP
+
+* Output isolation and capacitive-load pole
+R_OUT OUT DAC_OUT 100
+C_OUT DAC_OUT 0 1n
+
+.control
+* AC frequency sweep from 10 Hz to 1 MHz (100 points per decade)
+ac dec 100 10 1Meg
+set wr_singlescale
+wrdata ac_sim.txt v(DAC_OUT) v(OUT) v(IN)
+
+* Transient simulation over 5 ms (5 cycles of 1 kHz 0-3.3V DAC input)
+tran 1u 5m 0 1u
+set wr_singlescale
+wrdata tran_sim.txt v(IN) v(OUT) v(DAC_OUT) v(N_INV) v(N_MFB)
+quit
+.endc
+
+.end
