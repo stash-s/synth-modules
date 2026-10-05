@@ -4506,7 +4506,7 @@
 				)
 			)
 		)
-		(property "Sim.Params" "dc=1.65 ampl=1.65 f=1k ac=1"
+		(property "Sim.Params" "dc=1.65 ampl=0.8 f=1k ac=1"
 			(at 29.21 115.4401 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4956,7 +4956,7 @@
 				)
 			)
 		)
-		(property "Value" "56k"
+		(property "Value" "52k"
 			(at 46.99 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
